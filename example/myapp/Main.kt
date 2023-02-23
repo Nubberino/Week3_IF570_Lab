@@ -31,5 +31,18 @@ fun buildAquarium()
 
 fun main()
 {
-    buildAquarium()
+//    buildAquarium()
+    makeFish()
+
+}
+
+fun makeFish()
+{
+    val shark = shark()
+    val playco = plescositomus()
+
+    println("Shark: ${shark.color}")
+    shark.eat()
+    println("Plescco: ${playco.color}")
+    playco.eat()
 }
