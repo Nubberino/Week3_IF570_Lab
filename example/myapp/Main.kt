@@ -1,4 +1,5 @@
 package example.myapp
+import example.myapp.Decor.Decoration
 import java.lang.Math
 
 fun buildAquarium()
@@ -33,7 +34,7 @@ fun main()
 {
 //    buildAquarium()
     makeFish()
-
+    makedecor()
 }
 
 fun makeFish()
@@ -45,4 +46,23 @@ fun makeFish()
     shark.eat()
     println("Plescco: ${playco.color}")
     playco.eat()
+}
+
+fun callDeco()
+{
+
+}
+
+
+fun makedecor()
+{
+    val decoration1 = Decoration("Granite")
+    println(decoration1)
+    val decoration2 = Decoration("Slate")
+    println(decoration2)
+    val decoration3 = Decoration("slate")
+    println(decoration3)
+
+    println (decoration3.equals(decoration1))
+    println (decoration2.equals(decoration3))
 }
