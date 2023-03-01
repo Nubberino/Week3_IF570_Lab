@@ -1,5 +1,6 @@
 package example.myapp
 import example.myapp.Decor.Decoration
+import example.myapp.Decor.Direction
 import java.lang.Math
 
 fun buildAquarium()
@@ -33,8 +34,9 @@ fun buildAquarium()
 fun main()
 {
 //    buildAquarium()
-    makeFish()
-    makedecor()
+//    makeFish()
+//    makedecor()
+      showEnum()
 }
 
 fun makeFish()
@@ -65,4 +67,11 @@ fun makedecor()
 
     println (decoration3.equals(decoration1))
     println (decoration2.equals(decoration3))
+}
+
+fun showEnum()
+{
+    println(Direction.EAST.name)
+    println(Direction.EAST.ordinal)
+    println(Direction.EAST.degrees)
 }
