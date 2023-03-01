@@ -75,3 +75,4 @@ fun showEnum()
     println(Direction.EAST.ordinal)
     println(Direction.EAST.degrees)
 }
+
